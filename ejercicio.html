@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="ejercicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title> JS- EJERCICIO</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <ul class= "menu-list"> 
+                <li class="activado">RESERVACIONES</li>
+                <li>PROMOCIONES</li>
+                <li>INSTALACIONES</li>
+                <li>COMENTARIOS</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+        <section class="left">
+            <p class="title">HOTEL Mina</p>
+            <h1>¡ESPERA LA APERTURA DE HOTEL Mina!</h1>
+            <br>
+            <p class="msg"> El Hotel Mina es un encantador refugio situado en el corazón de la ciudad, ideal para quienes buscan una experiencia acogedora y única. Su diseño combina elegancia y confort, con habitaciones luminosas decoradas con un estilo contemporáneo y toques tradicionales.</p>
+            <button class="cta">¡RESERVA YA!</button>
+        </section>
+
+        <section class="right">
+            <img src="imagenes/hotel.jpg" alt="no se puede mostrar la imagen">
+        </section>
+    </section>
+
+    <script>
+        var menu=document.querySelector('.menu')
+        var menuBTN =document.querySelector('menu button')
+
+        menuBTN.aadEventListener('click', () =>{
+            menu.ClassList.toggle('opened')
+        })
+    </script>
+</body>
+</html>
